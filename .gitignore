@@ -1,17 +1,13 @@
-# Private settings (passwords) - never published
-DeskTransportDisplay/DeskSecrets.h
-
-# Upload instructions for the AI helper - local only
-AI_UPLOAD.md
-
-# Build / editor clutter
+# This repository contains public feature documentation only.
+DeskTransportDisplay/
 build/
+DeskSecrets.h
+*.ino
+*.h
+*.cpp
 *.bin
 *.elf
-*.map
-*.bak
 *.zip
-.vscode/
+*.o
 .DS_Store
 Thumbs.db
-desktop.ini

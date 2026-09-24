@@ -1,6 +1,6 @@
 # 🔌 Schematic (text version)
 
-Train Bus Weather Signboard v1.0.0 — the whole circuit is two boards and nine wires.
+Train Bus Weather Signboard Rev1.1 / firmware v1.1.0 — the whole circuit is two boards and nine wires.
 No resistors, no level shifters, no extra button: MODE is the BOOT button already on the ESP32-C3.
 
 ```
