@@ -1,0 +1,17 @@
+# Private settings (passwords) - never published
+DeskTransportDisplay/DeskSecrets.h
+
+# Upload instructions for the AI helper - local only
+AI_UPLOAD.md
+
+# Build / editor clutter
+build/
+*.bin
+*.elf
+*.map
+*.bak
+*.zip
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

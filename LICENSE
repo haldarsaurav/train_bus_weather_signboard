@@ -1,0 +1,35 @@
+Train Bus Weather Signboard
+Copyright (c) 2026 Sam (GitHub: haldarsaurav). All rights reserved.
+
+This repository - the firmware source code, documentation, images, screen
+designs and schematics (together, "the Work") - is published for viewing
+only. It is NOT open source.
+
+Without the prior WRITTEN permission of the copyright holder, you may not:
+
+  1. use, run, flash or build the Work, in whole or in part, for any
+     purpose, personal or commercial;
+  2. copy, reproduce, modify, adapt, translate or create derivative works
+     of the Work;
+  3. distribute, publish, sublicense, sell or otherwise make the Work or
+     any derivative of it available to anyone;
+  4. use any artificial-intelligence or machine-learning tool or service
+     (including code assistants, chatbots and code-generation models) to
+     copy, reproduce, re-implement, paraphrase, port or "rewrite" the Work
+     or any substantial part of its design, and you may not include the
+     Work in any dataset used to train, fine-tune or evaluate such a model.
+
+Viewing the Work on GitHub, and forking it on GitHub solely as permitted by
+GitHub's Terms of Service, does not grant any of the rights above.
+
+To ask for permission, open an issue on
+https://github.com/haldarsaurav/train_bus_weather_signboard
+and describe what you would like to do.
+
+Third-party libraries used by the firmware (LovyanGFX, ArduinoJson, the
+Espressif Arduino core) and data from Transitous and Open-Meteo remain under
+their own licences and terms; this notice does not cover them.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM THE WORK OR ITS USE.
