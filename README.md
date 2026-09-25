@@ -1,11 +1,18 @@
 # Train Bus Weather Signboard
 
+> **All rights reserved — permission required.** No reuse, copying, redistribution or AI/ML
+> reuse is licensed without prior written permission from **Sam / @haldarsaurav**. This includes
+> using protected project material as inspiration or a reference to recreate its implementation,
+> documented logic, original visuals or expressive feature arrangement. Read the [full licence](LICENSE),
+> [AI policy](AI_POLICY.md) and [permission guide](docs/PERMISSIONS.md) for scope and legal limits.
+
+
 **A desk-sized departure board for Freising: trains, local buses and weather on a 3.2-inch screen.**
 
 An ESP32-C3 Super Mini brings the feel of a station sign to the desk. It connects to 2.4 GHz
 Wi-Fi and displays public transport and weather feeds without a phone app or an API key.
 
-**Current revision: Rev1.1 · firmware 1.1.0**
+**Current revision: Rev1.1 · firmware 1.1.0 · final documentation tag: `rev1.1-final`**
 
 ![The main screens](docs/images/hero.png)
 
@@ -15,7 +22,27 @@ Access to that repository depends on its permissions.
 
 The screen pictures below are generated illustrations using example data from the earlier
 layout. They are not photographs or Rev1.1 hardware captures; the older train footer in them
-predates the revised delay graph described below.
+predates the revised delay graph described below. The two enlarged legend diagrams are new
+Rev1.1 explanatory drawings, with illustrative data.
+
+## Full feature and icon guide
+
+Read the **[complete screen-by-screen guide](docs/FEATURE_GUIDE.md)** for every visible badge,
+symbol, colour, field, graph, status message and setting, with its purpose and worked examples.
+
+| Find an explanation | Guide |
+| --- | --- |
+| Train badges, planned/revised times, cancellations and countdowns | [Train pages](docs/FEATURE_GUIDE.md#train-pages) |
+| Bus bay numbers and the N/S/E/W fallback | [Bus pages](docs/FEATURE_GUIDE.md#bus-pages) |
+| Sun, crescent, cloud, fog, rain, snow, lightning and sun-event marks | [Weather symbols](docs/FEATURE_GUIDE.md#weather-symbols) |
+| Temperature, feels-like, humidity, wind and day/night colours | [Weather now](docs/FEATURE_GUIDE.md#weather-now) |
+| Rain bars, orange temperature line and the current-hour marker | [Twelve-hour chart](docs/FEATURE_GUIDE.md#next-twelve-hours) |
+| UV, daylight changes, rain timing and lunar phase | [Three-day outlook](docs/FEATURE_GUIDE.md#next-three-days) |
+| Missing data, cancellation markers, coverage and the 15-minute scale | [Delay graph](docs/FEATURE_GUIDE.md#train-delay-history) |
+| Weekly marks, colour gradient and today's white cap | [Temperature history](docs/FEATURE_GUIDE.md#temperature-history) |
+| Every health-dot state, startup message, QR step and setup control | [Health](docs/FEATURE_GUIDE.md#data-health-and-messages) · [Setup](docs/FEATURE_GUIDE.md#boot-controls-and-setup) |
+
+![Enlarged weather and status icon legend](docs/images/rev11_icon_guide.png)
 
 ## What it shows
 
@@ -49,6 +76,8 @@ The Bahnhof Stadtbus and P+R boards each have their own page and refresh status.
 | ![Stadtbus illustration](docs/images/screen_bus_stadtbus.png) | ![P+R illustration](docs/images/screen_bus_pr.png) |
 
 ## The improved delay graph
+
+![Enlarged Rev1.1 graph legend](docs/images/rev11_delay_guide.png)
 
 Rev1.1 shows the average positive reported delay of eligible realtime trains due within the
 next hour. It uses the fetched board, across all train pages, and does not claim to measure
@@ -131,6 +160,10 @@ See the [wiring reference](docs/SCHEMATIC.md). Board-specific backlight connecti
 the actual display module. Build and flashing instructions are maintained in the code repository.
 
 ## Revision history
+
+**Rev1.1 final documentation — 25 September 2026:** expanded permission-only licence and AI-use
+policy in both repositories; complete icon/feature guide, examples and two verified legend diagrams.
+Firmware remains 1.1.0. [Project status](docs/PROJECT_STATUS.md) records the scope of completion.
 
 **Rev1.1 — 24 September 2026:** corrected delay measurement and elapsed-time history; separate
 cancellation and coverage markers; clearer missing-data behaviour. Includes the Rev1 review's
