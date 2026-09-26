@@ -5,7 +5,9 @@
 Five display looks and the Rev7 printable enclosure are documented in the current branches.
 The sample screen previews and enclosure views are CAD/software illustrations, not photographs.
 The final font contrast pass, physical LCD legibility, device interactions and enclosure fit
-still need hardware verification. The firmware tests and build are recorded in the code repository.
+still need hardware verification. The final ESP32-C3 build passed at 2,282,874 bytes flash
+and 52,452 bytes static RAM; the logic/graph and portal tests also pass. Build details are
+recorded in the code repository.
 
 ## Rev1.1 closeout
 
