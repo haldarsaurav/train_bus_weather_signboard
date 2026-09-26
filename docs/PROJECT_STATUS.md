@@ -1,4 +1,13 @@
-# Rev1.1 project closeout
+# Project status
+
+## Rev1.2 audit — 26 September 2026
+
+Five display looks and the Rev7 printable enclosure are documented in the current branches.
+The sample screen previews and enclosure views are CAD/software illustrations, not photographs.
+The final font contrast pass, physical LCD legibility, device interactions and enclosure fit
+still need hardware verification. The firmware tests and build are recorded in the code repository.
+
+## Rev1.1 closeout
 
 **Software, documentation and repository packaging completed on 25 September 2026.**
 Firmware remains **1.1.0**. The `rev1.1-final` tag adds the final documentation and permission

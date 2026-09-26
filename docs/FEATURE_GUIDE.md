@@ -1,8 +1,11 @@
 # Complete screen, icon and feature guide
 
-**Rev1.1 · firmware 1.1.0 · Freising desk signboard**
+**Feature meanings from Rev1.1, retained in Rev1.2 · firmware 1.2.0**
 
-This guide describes the current firmware's visible behaviour. All examples are invented to
+This guide uses the **Original** look to explain the data fields, symbols, colours and controls.
+Rev1.2 also offers Bahnsteig, Amber Matrix, Papier and Split-Flap; their layouts and palettes
+vary, while the data and controls described here remain the same. See the [theme previews](../README.md#five-looks-in-rev12).
+All examples are invented to
 explain the display; they are not live departures or a forecast. The enlarged legend diagrams
 are explanatory drawings. The other screen renders show the earlier layout and can contain
 older version labels and the earlier train graph.

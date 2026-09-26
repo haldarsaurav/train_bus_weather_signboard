@@ -12,7 +12,9 @@
 An ESP32-C3 Super Mini brings the feel of a station sign to the desk. It connects to 2.4 GHz
 Wi-Fi and displays public transport and weather feeds without a phone app or an API key.
 
-**Current revision: Rev1.1 · firmware 1.1.0 · final documentation tag: `rev1.1-final`**
+**Current revision: Rev1.2 · firmware 1.2.0**
+
+Rev1.1 remains available at the `rev1.1-final` documentation tag.
 
 ![The main screens](docs/images/hero.png)
 
@@ -20,10 +22,41 @@ This repository is the public feature showcase. Firmware, tests, build instructi
 release notes live exclusively in the [code repository](https://github.com/haldarsaurav/train_bus_weather_signboard_code).
 Access to that repository depends on its permissions.
 
-The screen pictures below are generated illustrations using example data from the earlier
-layout. They are not photographs or Rev1.1 hardware captures; the older train footer in them
-predates the revised delay graph described below. The two enlarged legend diagrams are new
-Rev1.1 explanatory drawings, with illustrative data.
+The main pictures below illustrate the earlier Original layout using example data. They are
+not hardware photographs. The [Rev1.2 preview set](docs/previews_v1.2.0/O_2_trains.png)
+shows the five looks using sample data; those previews precede the final small-font contrast
+pass. The two enlarged legend diagrams explain Rev1.1 features with illustrative data.
+
+## Five looks in Rev1.2
+
+Select a look in the setup page; **Original** remains the default. The other looks are
+**Bahnsteig** (navy and signal yellow), **Amber Matrix** (station display dots),
+**Papier** (light paper and ink) and **Split-Flap** (mechanical flap tiles).
+
+| Original | Bahnsteig |
+| --- | --- |
+| ![Original train board](docs/previews_v1.2.0/O_2_trains.png) | ![Bahnsteig train board](docs/previews_v1.2.0/A_2_trains.png) |
+
+| Amber Matrix | Papier |
+| --- | --- |
+| ![Amber Matrix train board](docs/previews_v1.2.0/B_2_trains.png) | ![Papier train board](docs/previews_v1.2.0/C_2_trains.png) |
+
+![Split-Flap train board](docs/previews_v1.2.0/F_2_trains.png)
+
+The looks cover the train, bus, weather, outlook, boot and setup screens. Font rendering and
+secondary-text contrast received a final readability pass after these sample previews.
+
+## 3D printed enclosure: Rev7
+
+The [Rev7 enclosure](enclosure/rev7/README_REV7.md) includes an editable FreeCAD model,
+STEP export, STLs for the front shell, back plate, BOOT key and optional fit test, plus a 3MF
+print layout. The case uses three M2.5 heat-set inserts and three countersunk screws.
+
+![Rev7 front shell CAD view](enclosure/rev7/images/rev7_front.png)
+
+The [rear and insert-post view](enclosure/rev7/images/rev7_rear.png) and
+[back-plate view](enclosure/rev7/images/rev7_back_plate.png) are renders from the saved CAD
+meshes. Physical fit, screw engagement and thermal behaviour still need a real print check.
 
 ## Full feature and icon guide
 
@@ -133,6 +166,7 @@ It remains open until Save or RESET.
 | Automatic page changes | Off |
 | Page interval | 10 seconds; selectable from 5 to 60 seconds |
 | Scrolling long destinations | Off |
+| Look | Original; four more looks available |
 
 ![Setup page illustration](docs/images/setup_page.png)
 
@@ -160,6 +194,10 @@ See the [wiring reference](docs/SCHEMATIC.md). Board-specific backlight connecti
 the actual display module. Build and flashing instructions are maintained in the code repository.
 
 ## Revision history
+
+**Rev1.2 — 26 September 2026:** five selectable looks and themed setup page; small-font
+contrast and text fitting audit; Rev7 enclosure CAD and print section. Firmware build and
+regression status are maintained in the [code repository](https://github.com/haldarsaurav/train_bus_weather_signboard_code).
 
 **Rev1.1 final documentation — 25 September 2026:** expanded permission-only licence and AI-use
 policy in both repositories; complete icon/feature guide, examples and two verified legend diagrams.
