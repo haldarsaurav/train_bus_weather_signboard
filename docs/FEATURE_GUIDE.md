@@ -378,7 +378,7 @@ restarting. The normal display mode does not offer the settings web server.
 
 ## Settings and examples
 
-![Setup page: illustrative layout](images/setup_page.png)
+![Current setup page, including the Look selector](previews_v1.2.0/portal_0.png)
 
 | Setting or label | What it does and why |
 | --- | --- |
@@ -393,6 +393,7 @@ restarting. The normal display mode does not offer the settings web server.
 | Change pages automatically | Switch pages after the selected interval rather than only with MODE |
 | Time on each page | Default 10 seconds; standard options 5, 10, 15, 20, 30, 45 and 60 seconds |
 | Scroll long destination names | Independently allows text to slide so more of a long name can be read |
+| Look | Choose Original, Bahnsteig, Amber Matrix, Papier or Split-Flap; the display changes after Save |
 | Save and restart | Validate and store the configuration, then restart into normal mode |
 | `Saving...` / disabled Save | A save attempt is underway; wait for its result |
 | Saved/restarting confirmation | The board acknowledged the save; reconnect the phone to normal Wi-Fi |

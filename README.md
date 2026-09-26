@@ -16,16 +16,13 @@ Wi-Fi and displays public transport and weather feeds without a phone app or an 
 
 Rev1.1 remains available at the `rev1.1-final` documentation tag.
 
-![The main screens](docs/images/hero.png)
-
 This repository is the public feature showcase. Firmware, tests, build instructions and technical
 release notes live exclusively in the [code repository](https://github.com/haldarsaurav/train_bus_weather_signboard_code).
 Access to that repository depends on its permissions.
 
-The main pictures below illustrate the earlier Original layout using example data. They are
-not hardware photographs. The [Rev1.2 preview set](docs/previews_v1.2.0/O_2_trains.png)
-shows the five looks using sample data; those previews precede the final small-font contrast
-pass. The two enlarged legend diagrams explain Rev1.1 features with illustrative data.
+The screen images use sample data and are software previews, not hardware photographs. They
+precede the final small-font contrast pass. The two enlarged legend diagrams explain Rev1.1
+features with illustrative data.
 
 ## Five looks in Rev1.2
 
@@ -33,13 +30,23 @@ Select a look in the setup page; **Original** remains the default. The other loo
 **Bahnsteig** (navy and signal yellow), **Amber Matrix** (station display dots),
 **Papier** (light paper and ink) and **Split-Flap** (mechanical flap tiles).
 
-| Original | Bahnsteig |
-| --- | --- |
-| ![Original train board](docs/previews_v1.2.0/O_2_trains.png) | ![Bahnsteig train board](docs/previews_v1.2.0/A_2_trains.png) |
+### Original
 
-| Amber Matrix | Papier |
-| --- | --- |
-| ![Amber Matrix train board](docs/previews_v1.2.0/B_2_trains.png) | ![Papier train board](docs/previews_v1.2.0/C_2_trains.png) |
+![Original train board](docs/previews_v1.2.0/O_2_trains.png)
+
+### Bahnsteig
+
+![Bahnsteig train board](docs/previews_v1.2.0/A_2_trains.png)
+
+### Amber Matrix
+
+![Amber Matrix train board](docs/previews_v1.2.0/B_2_trains.png)
+
+### Papier
+
+![Papier train board](docs/previews_v1.2.0/C_2_trains.png)
+
+### Split-Flap
 
 ![Split-Flap train board](docs/previews_v1.2.0/F_2_trains.png)
 
@@ -57,6 +64,23 @@ print layout. The case uses three M2.5 heat-set inserts and three countersunk sc
 The [rear and insert-post view](enclosure/rev7/images/rev7_rear.png) and
 [back-plate view](enclosure/rev7/images/rev7_back_plate.png) are renders from the saved CAD
 meshes. Physical fit, screw engagement and thermal behaviour still need a real print check.
+
+### Tilted desk version — coming soon
+
+A 15° tilted desk enclosure is being developed. Its CAD views and printable files will be
+added here when the design is ready. See the [enclosure section](enclosure/README.md) for the
+current Rev7 files and this planned variant.
+
+### Inspiration and real-life photos
+
+This station departure display is a **reference photo**, not a photo of this project or its
+3D-printed case.
+
+<img src="docs/images/inspiration_station_display.jpg" alt="Station departure display used as visual inspiration" width="640">
+
+> **Coming soon — 3D-printed enclosure:** photos of the finished physical print.
+
+> **Coming soon — signboard in use:** photos of the working device on the desk.
 
 ## Full feature and icon guide
 
@@ -168,7 +192,25 @@ It remains open until Save or RESET.
 | Scrolling long destinations | Off |
 | Look | Original; four more looks available |
 
-![Setup page illustration](docs/images/setup_page.png)
+### Look selector in the setup portal
+
+The current setup page has a **Look** card with all five choices. The preview below shows
+the selector in context; [open the full-size setup preview](docs/previews_v1.2.0/portal_0.png)
+to inspect the controls.
+
+![Current setup portal showing the Look selector](docs/previews_v1.2.0/portal_0.png)
+
+## Electricity use
+
+Using the reported **about 0.75 W**, running continuously uses **6.57 kWh/year**
+(`0.00075 kW × 24 hours × 365 days`). At Freisinger Stadtwerke's published 2026
+**MaxiStrom** energy rate of **30.95 ct/kWh**, that is **about €2.03/year** (about
+**€0.17/month**). At the **Grundversorgung**
+single-rate energy price of **33.07 ct/kWh**, it is **about €2.17/year**. See the
+[MaxiStrom tariff](https://www.freisinger-stadtwerke.de/de/Energie-Wasser/Strom/Unsere-Tarife/)
+and [Grundversorgung price sheet](https://www.freisinger-stadtwerke.de/de/Energie-Wasser/Strom/Unsere-Tarife/Unsere-Tarife-100-Oekostrom/20251114-Preisblatt-Strom-GV-ab-Januar-2026.pdf).
+These are the extra energy costs on an existing household supply; standing charges are not
+allocated to the signboard. The estimate changes if its average power or your tariff differs.
 
 ## Reliability in Rev1.1
 
@@ -196,7 +238,9 @@ the actual display module. Build and flashing instructions are maintained in the
 ## Revision history
 
 **Rev1.2 — 26 September 2026:** five selectable looks and themed setup page; small-font
-contrast and text fitting audit; Rev7 enclosure CAD and print section. Firmware build and
+contrast and text fitting audit; Rev7 enclosure CAD and print section. The showcase now also
+shows the current Look selector, consistent theme previews, an inspiration photo, planned
+tilted-case and real-photo slots, and a measured-power running-cost estimate. Firmware build and
 regression status are maintained in the [code repository](https://github.com/haldarsaurav/train_bus_weather_signboard_code).
 
 **Rev1.1 final documentation — 25 September 2026:** expanded permission-only licence and AI-use
